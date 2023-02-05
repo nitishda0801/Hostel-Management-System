@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna cottage</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .Bhaiyaji {
+            background-color: white;
+            color: black;
+            display: flexbox;
+            display: inline-flex;
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        ul li {
+            margin: 15px;
+            padding: 10px;
+            position: relative;
+            left: 100%;
+            width: 30px;
+        }
+
+        ul li a {
+            color: blue;
+            font-size: 20px;
+        }
+
+        ul li a:hover,
+        a.active {
+            color: rgb(16, 175, 189);
+        }
+
+        .suraj {
+            width: 260px;
+            height: 71px;
+        }
+
+        .source {
+            height: 520px;
+            width: 1400px;
+            border-radius: 8px;
+        }
+
+        .button1 {
+            width: 180px;
+            height: 30px;
+            position: relative;
+            left: 108%;
+            margin: 15px;
+            text-align: center;
+            font-size: 20px;
+            border-color: blue;
+            border-style: 4px solid;
+            /* color: blue; */
+
+        }
+
+        .raj {
+            width: 760px;
+            height: 500px;
+            position: relative;
+            left: 30%;
+        }
+
+        .patel {
+            width: 760px;
+            height: 500px;
+            /* position: relative; */
+            /* left: 30%; */
+        }
+
+        .shiv {
+            width: 760px;
+            height: 500px;
+            position: relative;
+            left: 30%;
+        }
+
+        #tt {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="width: 1000px;">
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="Home" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img src="images/userpic.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>User Id</b></label>
+                <input type="text" placeholder="Enter UserId" name="uid" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <select name="category" id="select">
+                    <option value="Student">Student</option>
+			        <option value="Admin">Admin</option>
+                </select>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+            
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+                <span class="psw"><a href="resetPass.html">Forgot password?</a></span>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <header>
+        <nav>
+            <ul class="Bhaiyaji">
+                <img class="suraj" src="images/kc1.png">
+                <!-- <h1 class="hm">Hostel Management</h1> -->
+                <li><a href="home.html" id="tt" class="active">Home</a></li>
+                <li><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
+                        id="tt">Login</a></li>
+                <li><a href="About.html" id="tt">AboutUs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <img class="source" src="images/img1.jpg">
+    </div>
+    <h1 style="position: relative;left: 40%; font-size: 50px;">Why KRISHNA COTTAGE</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <h1>AIRY BALCONY</h1>
+                    <h3 style=" width: 400px;position: relative; left: 10%;display: inline-block;">(In Classical
+                        architecture a balcony that is fully recessed or covered by its own roof is described as a
+                        loggia; [q.v.].) In hot countries a balcony allows a greater movement of air inside the
+                        building, as the doors opening onto it are usually louvered.The balcony serves to enlarge the
+                        living space and range of activities possible in a dwelling without a garden or lawn. In many
+                        apartment houses the balcony is partly recessed to provide for both sunshine and shelter or
+                        shade. (In Classical architecture a balcony that is fully recessed or covered by its own roof is
+                        described as a loggia; [q.v.].) In hot countries a balcony allows a greater movement of air
+                        inside the building, as the doors opening onto it are usually louvered.
+                    </h3>
+                </th>
+                <th><img class="raj" src="images/image3.jpg"></th>
+            </tr>
+        </thead>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th><img class="patel" src="images/img4.jpg"></th>
+                <th>
+                    <h1>PARTY PLACE</h1>
+                    <h3 style="width: 400px;position: relative; left: 10%;display: inline-block;">Whether you want
+                        to enjoy a poolside party or have a unique nightclub experience, these party spots in Hostel
+                        will fulfill your dreams for sure. Having something for everyone, This Hostel is home to
+                        famous party places such as The HillTop, Club LPK, Capetown Cafe, Cafe Lilliput, Club M,
+                        Leopard Valley, and so on. Pick the best party hub from these where you'd like to let your
+                        hair down and dance all night!
+                    </h3>
+                </th>
+
+            </tr>
+        </thead>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <h1>TRIP FACILITY</h1>
+                    <h3 style="width: 400px;position: relative; left: 10%;display: inline-block;">We provide you
+                        the best and suitable trip for you also.Exploring parts unknown, whether domestically or
+                        internationally, is a pastime that hundreds of millions of individuals embark on each
+                        year. For families, travel is even more precious because it allows parents to expose
+                        their children to something that could be out of their norm. That said, with all the
+                        benefits of travel come some stressors that can impede on the travel experience for just
+                        about anyone, but you don't have to let those ruin your vacation.
+                    </h3>
+                </th>
+                <th><img class="shiv" src="images/img5.jpg"></th>
+            </tr>
+        </thead>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <h1 style="position:relative;left: 20%;">To Know More About Krishna Cottage then Click
+                        Here -></h1>
+                </th>
+                <th>
+                    <button
+                        style=" position:relative;left: 210%;background-color: blue;color: white;width: 80px;height: 30px;text-align: center;">Click
+                        Here</button>
+                </th>
+            </tr>
+        </thead>
+    </table>
+    <table style="background-color: black; color:white;width: 1400px;height: 100px;">
+        <thead>
+            <tr>
+                <th style="position:relative ;left: -5%;">This website reserved all copyright &copy; issue
+                    by Mr.Patel</th>&emsp13;&emsp13;
+                <th style="position:relative ;left: -5%;">Phone +91-6206626296</th>&emsp13;&emsp13;
+                <!-- <th>Insta-id @surajpatel.45</th> -->
+                <th><a style="color: white;" href="instagram.com/surajpatel.45"><b>Insta-Id:
+                            surajpatel.45</b></a></th>
+
+            </tr>
+
+        </thead>
+    </table>
+</body>
+
+</html>

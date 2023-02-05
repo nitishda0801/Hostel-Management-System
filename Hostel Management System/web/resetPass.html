@@ -1,0 +1,50 @@
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="resetPass.css">
+</head>
+<body>
+    <header class="header">
+            <div class="banner">
+                <h1>Hostel Management System</h1>
+            </div>
+        </header>
+        <form action="Resetpass" method="post">
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <h4>Change Password</h4>
+                </div>
+                <div class="input">
+                    <h3 class="un">Username</h3>
+                    <input
+                        type="text"
+                        name="uname"
+                        id="username"
+                        class="box"
+                        placeholder="Type your Username"
+                    />
+                    <h3 class="un">Password</h3>
+                    <input
+                        type="password"
+                        name="pass"
+                        id="password"
+                        class="box"
+                        placeholder="Type your Password"
+                    />
+                    <div class="select">
+                    <select name="select" id="slct" class="se">
+                        <option value="Student">Student</option>
+                        <option value="Admin">Admin</option>
+                    </select></div>
+                    <button type="submit">Change Password</button>
+                </div>
+               
+            </div>
+        </div>
+        </form>
+    </body>
+</html>

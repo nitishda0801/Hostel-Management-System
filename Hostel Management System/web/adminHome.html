@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Admin Home Page</title>
+      <link rel="stylesheet" href="adminPageStyle.css">
+   </head>
+   <body>
+      <nav>
+            <label class="logo">Hostel Management</label>
+            <ul>
+                <li><a class="active" href="adminHome.html"><i class="fa-solid fa-house" style="color: white;"></i>Home</a></li>
+                <li>
+
+                    <a href="#">Admin<i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <form action="servlet">
+
+                            <li><a href="aProfile.jsp">View Details</a></li>
+                        </form>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Rooms<i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="addRoom.html">Add Room</a></li>
+                        <li><a href="roomList.jsp">View Rooms</a></li>
+                        <li><a href="registerRoom.html">Register Room</a></li>
+                        <li><a href="regRoomList.jsp">View Registered Rooms</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Students<i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="addStudent.html">Add Student</a></li>
+                        <li><a href="studentList.jsp">View Students List</a></li>
+                        <li><a href="sEdit.html">Edit Student</a></li>
+                        <li><a href="sDelete.html">Remove Student</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Fee Details<i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="feeStructure.jsp">Fee Structure</a></li>
+                        <li><a href="addFeeDetail.html">Add Student Fee</a></li>
+                        <li><a href="feeDetail.jsp">View Student Fee Details</a></li>
+                    </ul>
+                <li><a href="resetPass.html">Change Password</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+      <header class="header3">
+        <div class="div">
+            <div class="div1" id="div-1"><a href="#"><b>Total Students</b></a></div>
+            <div class="div2" id="div-2"><a href="studentList.jsp">View Details>></a></div>
+        </div>
+        <div class="div">
+            <div class="div1" id="div-1"><a href="#"><b>Total Rooms</b></a></div>
+            <div class="div2" id="div-2"><a href="roomList.jsp">View Details>></a></div>
+        </div>
+        
+    </header>
+      <section></section>
+   </body>
+</html>

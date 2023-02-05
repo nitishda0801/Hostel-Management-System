@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="adminPageStyle.css">
+    <title>Add Room</title>
+</head>
+<body>
+    <nav>
+            <label class="logo">Hostel Management</label>
+            <ul>
+                <li><a class="active" href="adminHome.html"><i class="fa-solid fa-house" style="color: white;"></i>Home</a></li>
+                <li>
+
+                    <a href="#">Admin<i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <form action="servlet">
+
+                            <li><a href="aProfile.jsp">View Details</a></li>
+                        </form>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Rooms<i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="addRoom.html">Add Room</a></li>
+                        <li><a href="roomList.jsp">View Rooms</a></li>
+                        <li><a href="registerRoom.html">Register Room</a></li>
+                        <li><a href="regRoomList.jsp">View Registered Rooms</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Students<i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="addStudent.html">Add Student</a></li>
+                        <li><a href="studentList.jsp">View Students List</a></li>
+                        <li><a href="sEdit.html">Edit Student</a></li>
+                        <li><a href="sDelete.html">Remove Student</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Fee Details<i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="feeStructure.jsp">Fee Structure</a></li>
+                        <li><a href="addFeeDetail.html">Add Student Fee</a></li>
+                        <li><a href="feeDetail.jsp">View Student Fee Details</a></li>
+                    </ul>
+                <li><a href="resetPass.html">Change Password</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav></br></br></br></br></br>
+    <div style="overflow-x: auto;">
+        <form action="Addroom" method="post">
+            <table class="content-table" style="background-color: pink;color: black;">
+                <tr>
+                    <th colspan="4" style="text-align: center;height: 40px;color: red;background-color: darkgreen;font-size: 25px;font-family:Verdana, Geneva, Tahoma, sans-serif;">ADD ROOM</th>
+                </tr>
+                <tr>
+                    <th width="30%" >Block:</th>
+
+                    <td><select id="block" name="Block" style="width: 100%;height: 30px;font-size: 20px;">
+                            <option value="D-Block">D-Block</option>
+                            <option value="N-Block">N-Block</option>
+                        </select></td></tr>
+                <tr>
+                    <th width="30%">Room No:  </th>
+
+                    <td><input type="number" id="name" name="Rno" style="width: 100%;height: 30px;font-size: 20px;" ></td>
+                </tr>
+                <tr>
+                    <th width="30%">Room Type:</th>
+                    <td><select id="status" name="Rtype" style="width: 100%;height: 30px;font-size: 20px;">
+                            <option value="AC">AC</option>
+                            <option value="NonAc">Non AC</option>
+                        </select></td>          
+                </tr>
+                <tr>
+                    <th width="30%">No of Bed:</th>
+                    <td><select id="status" name="Nobed" style="width: 100%;height: 30px;font-size: 20px;">
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                        </select></td>         
+                </tr>
+                <tr>
+                    <th width="30%">status:</th>
+                    <td><select id="status" name="Status" style="width: 100%;height: 30px;font-size: 20px;">
+                            <option value="disabled">Enabled</option>
+                            <option value="disabled">Disabled</option>
+                        </select></td>
+                    <!-- <td><input type="text" id="mob" style="width: 300px;" ></td> -->
+                </tr>
+
+                <th colspan="4">
+                <center ><input style="background-color: aqua; width: 100px; height: 33px; border-radius: 11px;font-weight: bold;" type="submit" value="ADD" onclick="AddRoom()"></center>
+                </th>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
